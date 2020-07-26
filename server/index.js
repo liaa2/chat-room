@@ -3,6 +3,9 @@ const express = require("express");
 const logger = require("morgan");
 const cors = require("cors");
 
+// mongo connection
+require("../config/mongo");
+
 //routes
 const indexRouter = require("../routes/index.js");
 const userRouter = require("../routes/user");
